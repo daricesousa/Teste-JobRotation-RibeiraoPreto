@@ -1,1 +1,77 @@
-Quando os veículos se encontrarem, ambos estarão no mesmo ponto da rodovia, e assim, a mesma distância da cidade de Ribeirão Preto.
+Ao se encontrarem na rodovia, tanto o carro quanto o caminhão estarão no mesmo ponto, ou seja, equidistantes da cidade de Ribeirão Preto.
+Porém, ao considerarmos o tempo necessário para chegar a Ribeirão Preto, fica evidente que o carro levaria menos tempo para chegar à cidade no momento em que se encontrarem. Assim, em termos de tempo, o carro estaria mais próximo de Ribeirão Preto do que o caminhão.
+
+
+
+É possível realizar cálculos para comprovar o que foi dito.
+
+O tempo consumido por cada um nos pedágios não é informado, no entanto, sendo p o tempo que o carro leva para passar por um pedágio e considerando que o caminhão leva 5 minutos a mais para passar por eles, temos que o caminhão leva p+0,08 horas. (5/60=0,08, convertendo minutos para horas).
+
+É importante ressaltar que, sendo "t" o tempo, "v" a velocidade e "d" a distância, a relação entre eles pode ser expressa pelas fórmulas: d = v*t , t = d/v.
+
+O tempo total que o caminhão levaria para percorrer de Ribeirão Preto a Franca é t = d/v = 100/80 . No entanto, há 2 pedágios no caminho que consomem um tempo 2*(p+0,08), resultando um tempo total de (100/80)+ 2*(0,08+p) = 1,41+2p
+Calcularemos agora, o tempo percorrido, chamado de t, desde que os veículos partiram para se encontrarem.
+Perceba que, no momento que os veículos se encontrarem, a distância percorrida pelo carro somada a distâmncia percorrida pelo caminhão, resulta na distância total do percurso, que é 100.
+
+No entanto, a posição do pedágio influência no resultado, faremos os calulos em 3 vezes, considerando que:
+
+A) o caminhão passa pelos dois pedágios antes dos veículos se encontrarem, assim, o carro não tem passado por nenhum pedágio.
+B) o carro passa pelos dois pedágios antes dos veículos se encontrarem, assim, o caminhão não tem passado por nenhum pedágio.
+C) o carro passa por um pedágio e o caminhão passa pelo outro, antes dos dois veículos se encontrarem.
+
+caso A)
+O carro percorreria uma distância de 110*t desde que partiu.
+O caminhão percorreria uma distância de 80*(t-2*(0,08p)) desde que partiu.
+
+Assim:
+
+110t + 80*(t-2*(0,08+p)) = 100
+110t + 80t - 320*(0,08+p) = 100
+190t - 25,6 - 25,6p = 100
+190t = 100 + 25,6 + 25,6p
+190t = 125,6 + 25,6p
+t = (125,6 + 25,6p)/190
+t = 0,66 + 0,13p
+
+Como o carro partiu de Ribeirão Preto, ele levaria o mesmo tempo para voltar, que é 0,66 + 0,13p.
+Já o caminhão, iria demorar um tempo equivalente ao tempo total do percurso, menos o tempo que já levou, ou seja  (1,41 + 2p) - (0,66 + 0,13p) = 0,75 + 1,87p
+Assim, o carro está há uma distância em tempo de Ribeirão de  0,66 + 0,13p, já o caminhão, há uma distância de 0,75 + 1,87, como p é positivo,  0,66 + 0,13p < 0,75 + 1,87.
+
+Caso B)
+
+O carro percorreria uma distância de 110* (t-2p) desde que partiu.
+O caminhão percorreria uma distância de 80*t desde que partiu.
+
+Assim:
+
+110* (t-2p) + 80*t = 100
+110t - 220p + 80t = 100
+190t - 220p = 100
+190t = 220p + 100
+t = (220p + 100) / 190
+t = 0,53 + 1,16p
+
+Como o carro partiu de Ribeirão Preto, ele levaria o mesmo tempo para voltar, que é 0,53 + 1,16p.
+Já o caminhão, iria demorar um tempo equivalente ao tempo total do percurso, menos o tempo que já levou, ou seja  (1,41 + 2p) - (0,53 + 1,16p) = 0,88 + 0,84p
+Assim, o carro está há uma distância em tempo de Ribeirão de  0,53 + 0,034p, já o caminhão, há uma distância de 0,88 + 0,84p, como p é positivo,  0,53 + 1,16p < 0,88 + 0,84p.
+
+
+Caso C)
+O carro percorreria uma distância de 110*(t-p) desde que partiu.
+O caminhão percorreria uma distância de 80*(t-(0,08+p)) desde que partiu.
+
+Assim:
+
+110 *(t-p) + 80 * (t-(0,08+p)) = 100
+110t - 110p + 80t - 6,4 - 80p = 100
+190t - 190p = 106,4 + 80p
+190t = 106,4 + 270p
+t = (106,4 + 270p)/190
+t = 0,56 + 1,42p
+
+Como o carro partiu de Ribeirão Preto, ele levaria o mesmo tempo para voltar, que é 0,56 + 1,42p.
+Já o caminhão, iria demorar um tempo equivalente ao tempo total do percurso, menos o tempo que já levou, ou seja  (1,41 + 2p) - (0,56 + 1,42p) = 0,85 + 0,58p
+Assim, o carro está há uma distância em tempo de Ribeirão de  0,56 + 1,42p, já o caminhão, há uma distância de 0,85 + 0,58p, como p é positivo,  0,56 + 1,42p < 0,85 + 0,58p.
+
+
+Portanto, para todos os casos, no momento que os veículos se encontram, o tempo necessário para o carro chegar aa Ribeirão Preto é menor do que o tempo necessário para o caminhão.
