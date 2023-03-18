@@ -1,0 +1,3 @@
+A função tem como objetivo calcular a soma de todos os números de 1 até 13. A variável "soma" é inicializada como zero e a variável "k" é inicializada como zero.
+Em seguida, um loop  é usado para iterar até que a variável "k" atinja o valor do índice. A cada iteração, a variável "k" é incrementada em 1 e adicionada à variável "soma". Após o término do loop, o valor de "soma" é impresso.
+A função retorna a soma 91. 
