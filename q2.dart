@@ -12,6 +12,6 @@ bool haveFibonacci(int n){
   return false;
 }
 
-main(){
+void main(){
   print(haveFibonacci(200));
 }
